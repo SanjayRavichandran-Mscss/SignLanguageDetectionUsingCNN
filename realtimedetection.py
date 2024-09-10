@@ -61,7 +61,7 @@ def extract_features(image):
 
 # Predict sign language label
 def predict_sign_language(frame, model):
-    label = ['A', 'M', 'N', 'S', 'T', 'blank']
+    label = ['A', 'B', 'C', 'D', 'E', 'F' , 'G' , 'H' , 'I' , 'J' , 'K' , 'L' , 'M' , 'N' , 'O' , 'P' , 'Q' , 'R' , 'S' , 'T' , 'U' , 'V' , 'W' , 'X' , 'Y' , 'Z' 'blank']
     crop_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     crop_frame = cv2.resize(crop_frame, (48, 48))
     crop_frame = extract_features(crop_frame)
