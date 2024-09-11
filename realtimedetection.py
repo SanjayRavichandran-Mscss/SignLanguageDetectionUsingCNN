@@ -72,7 +72,7 @@ def predict_sign_language(frame, model):
     return prediction_label, confidence
 
 # Streamlit Web App
-st.title("SignBridge India")
+st.title("SignBridgeIndia")
 
 # Load Keras Model
 model = load_model()

@@ -155,7 +155,7 @@ def process_frame(frame, key, count):
     cv2.imwrite(filename, frame)
 
 # Streamlit app
-st.title("Sign Language Detection Data Collection")
+st.title("SignBridgeIndia [Data Collection]")
 
 # Camera input
 video_file = st.camera_input("Capture images")
